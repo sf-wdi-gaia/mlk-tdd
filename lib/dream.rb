@@ -45,7 +45,8 @@ end
 
 class Freedom
 
-  def ring
+  def ring(state)
+    @states << state
   end
 
 end

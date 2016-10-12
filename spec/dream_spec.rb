@@ -205,9 +205,9 @@ describe "The Dream" do
   #   the curvaceous peaks of California.
 
     describe "#ring" do
-      let(:freedom){Freedom.new}
+      let(:freedom){ Freedom.new }
       let(:new_hampshire){ State.new("New Hampshire") }
-      let(:new_york){      State.new("New York") }
+      let(:new_york){ State.new("New York") }
 
       it "from many states" do
         expect(freedom.ring(new_hampshire)).to be_kind_of(Array)
@@ -219,7 +219,7 @@ describe "The Dream" do
 
       it "from the mighty mountains of New York" do
         expect(new_york).not_to be_ringing
-        freedom.ring new_york
+        freedom.ring(new_york)
         expect(new_york).to be_ringing
       end
 
