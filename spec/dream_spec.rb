@@ -218,31 +218,11 @@ describe "The Dream" do
       end
 
       it "from the mighty mountains of New York" do
-        expect(new_york).not_to be_ringing
+        expect(freedom.land).not_to include(new_york)
         freedom.ring(new_york)
-        expect(new_york).to be_ringing
+        expect(freedom.land).to include(new_york)
       end
 
-      context "Bonus: Free at last!" do
-        let(:pennsylvania){  State.new("Pennsylvania") }
-        let(:colorado){      State.new("Colorado") }
-        let(:california){    State.new("California") }
-        let(:washington_dc){ State.new("Washington, DC") }
-
-        it "only in states (taxation without representation)" do
-          expect(freedom.ring(washington_dc)).not_to include(washington_dc)
-        end
-
-        it "from Pennsylvania, Colorado and California" do
-          freedom.ring(pennsylvania, colorado, california)
-          expect(freedom.ring).to include(pennsylvania)
-          expect(pennsylvania).to be_ringing
-          expect(freedom.ring).to include(colorado)
-          expect(colorado).to be_ringing
-          expect(freedom.ring).to include(california)
-          expect(california).to be_ringing
-        end
-      end
     end
   end
 end

@@ -45,8 +45,16 @@ end
 
 class Freedom
 
+  def initialize
+    @states = []
+  end
+
   def ring(state)
     @states << state
+  end
+
+  def land
+    @states
   end
 
 end
