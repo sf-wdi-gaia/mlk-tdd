@@ -1,4 +1,4 @@
-## MLK TDD
+## The Dream
 
 In the `spec/` folder is an Rspec file with the contents of MLK's famous "I have a dream speech." Your job is to make each of those dreams a reality!
 
@@ -8,4 +8,4 @@ Read your errors & zen out!
 
 Put code in `lib/dream.rb`. Run `rspec` from the current directory.
 
-![mlk](http://crc.ohio.gov/portals/0/Martin-Luther-King-Jr.jpg)
+[![mlk](http://crc.ohio.gov/portals/0/Martin-Luther-King-Jr.jpg)](https://www.youtube.com/watch?v=3vDWWy4CMhE)
